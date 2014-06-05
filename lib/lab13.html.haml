@@ -1,0 +1,216 @@
+---
+layout: jtebase
+---
+
+.slides
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 Lab 13 - Running the Generic Loan Demo
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h2 Lab Goal
+      %h4 To run the Generic Loan demo in JBoss BPM Suite workbench
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Build & Deploy
+        * before starting the process, we need to build and deploy it
+        * `AUTHORING -> PROJECT AUTHORING -> TOOLS -> PROJECT EDITOR`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image148.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Build & Deploy
+        * in project editor click `BUILD & DEPLOY`
+        * should see two pop-ups, `SAVE` first one, enter commit message second
+        * green bar pop-up; `"File pom.xml saved successfully"`
+        * green bar pop-up; `"Build Successful"`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image149.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Process Management
+      * Perspectives to examine deployed definitions and their instances
+        * Process definitions - built and deployed projects will show up here
+        * Process instances - any process instances started or completed will show up here
+
+          `PROCESS MANAGEMENT -> PROCESS DEFINITIONS`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image150.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Process Definitions
+        * view of the process definitions available to you
+        * `MAGNIFYING GLASS` icon provides detailed view of definition
+        * `PLAY` icon will start an instance of the process
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image151.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * View of the process definition
+        * click on `MAGNIFYING GLASS` icon and examine definition details
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image152.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Process Instances
+        * we can start a process instance by clicking on `PLAY` icon or `NEW INSTANCE` button
+        * this generates a form for us to submit initial loan data
+        * fill in details as shown or submit you personal loan request data
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image153.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * View running process instance
+        * details shown of the log, active node, etc.
+        * next we want to view the visual model showing execution path and status
+        * found under menu `VIEWS`
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image154.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * View running process instance model
+        * `VIEWS -> PROCESS MODEL` - shows visual process path and location of running instance
+        * grey nodes shows path of execution
+        * red circled node current node, waiting on user task `Approval`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image155.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * View running process instance variables
+        * `VIEWS -> PROCESS VARIABLES` - process variables for editing
+        * variables have icons on right to edit or view history
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image156.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Tasks
+        * `TASKS -> TASKS LIST`
+        * top right buttons for task views
+        * view waiting tasks that are active, users personal tasks, and group tasks waiting to be claimed
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image157.png" />
+        <img src="/images/brms_bpms_workshop/image158.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Tasks
+        * to claim a task you must be part of the group that is assigned a task
+        * click `GROUP` to show list of tasks for loanOfficer group
+        * we can see this as we are part of that group, shown in user list top right
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image159.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * Tasks
+        * claim the task by clicking on the open lock icon
+        * this closes the lock, removes this task from the Group
+        * click on the check mark to work on this task
+        * the task form will appear in the right panel
+        * approve the task (checkbox) and click the complete button
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image160.png" />
+      </div>
+
+
+  %section(data-state="" )
+    .title-information
+      %h4 Running the Generic Loan
+    :markdown
+      * View completed process instance
+        * feel free to explore the completed instance views and data
+
+        `PROCESS MANAGEMENT -> PROCESS INSTANCE -> COMPLETED`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image161.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h3 Next up, Process & Task and Business Dashboards...
+
+  %section(data-state="questions" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    :markdown
+      <div style="float: left">
+        <img height="100" width="700" src="/images/references.jpg" />
+      </div>
+      * JBoss BRMS & BPM Suite Articles
+        * <font size="5">[_http://schabell.org/search/label/BRMS_] (http://schabell.org/search/label/BRMS) - [_http://schabell.org/search/label/BPMS_] (http://schabell.org/search/label/BPMS)</font>
+      * JBoss BPM Suite Demos
+        * <font size="5">[_http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html_] (http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html_] (http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html_] (http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html)</font>
+        * <font size="5">[_https://github.com/eschabell/business-resource-optimizer-demo_] (https://github.com/eschabell/business-resource-optimizer-demo)</font>
+      * JBoss xPaaS Demos
+        * <font size="5">[_https://github.com/eschabell/cartridge-bpmPaaS_] (https://github.com/eschabell/cartridge-bpmPaaS)</font>
+        * <font size="5">[_https://github.com/eschabell/cartridge-bpmPaaS-generic-loan-demo_] (https://github.com/eschabell/cartridge-bpmPaaS-generic-loan-demo)</font>
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 Automate Your Business with JBoss Integration & BPM
+      %h5
+        :markdown
+          * [Lab 14 - Process & Task and Business Dashboards (BAM) ] (lab14.html)

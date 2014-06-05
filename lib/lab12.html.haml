@@ -1,0 +1,273 @@
+---
+layout: jtebase
+---
+
+.slides
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 Lab 12 - Create a new project
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h2 Lab Goal
+      %h4 To create a new project in the JBoss BPM Suite workbench
+
+  %section(data-state="" )
+    .title-information
+      %h4 Help / Fast Forward
+    :markdown
+      * In case you get stuck we provided a git repo containing all assets
+      * from the main menu, select `AUTHORING -> ADMINISTRATION`
+      * then select `REPOSITORIES -> CLONE REPOSITORY`
+      * In the popup window, provide the following data:
+        * `Repository name: generic-loan`
+        * `Organizational unit: Demos`
+        * `Git URL: https://github.com/eschabell/bpm-suite-generic-loan-repo.git`
+
+  %section(data-state="ffbpms" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+      %h4 JBoss BPM Suite structure
+    :markdown
+      * JBoss BPM Suite structures assets as follows (top-down):
+        * Organizations
+        * Reporitories
+        * Projects
+        * Packages
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image04.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Add new organizational unit
+    :markdown
+      * After login you head over to the administration perspective:
+
+        `AUTHORING -> ADMINISTRATION`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image136.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Add new organizational unit
+    :markdown
+      * Now we need to manage organizational units to add a new one:
+
+        `ORGANIZATIONAL UNIT -> MANAGE ORGANIZATIONAL UNITS`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image137.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Add new organizational unit
+    :markdown
+      * Add button to open new organizational unit:
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image07.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Add new organizational unit
+    :markdown
+      * Provide the details
+        * click on `OK`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image08.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Create a new repository
+    :markdown
+      * We need to create or clone a repository.
+      * JBoss BPM Suite uses git as repository structure.
+        * we can clone existing git repositories.
+        * we can create a new one.
+      * For this lab, we clone an existing repository.
+        * the Generic Loan Demo repository
+
+  %section(data-state="" )
+    .title-information
+      %h4 Clone existing repository
+    :markdown
+      * Now we clone the repository using our organizational unit:
+
+        `REPOSITORIES -> CLONE REPOSITORY`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image133.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Clone existing repository
+    :markdown
+      * Provide the details
+        * `Repository Name: generi-loan`
+        * `Organizational Unit: Demos`
+        * `Git URL: https://github.com/eschabell/bpm-suite-generic-loan-repo.git`
+        * click on `CLONE`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image134.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Clone existing repository
+    :markdown
+      * You see the popup showing the repository was created.
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image135.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * We can now explore the Generic Loan project
+      * First switch to project authoring perspective
+        * `AUTHORING -> PROJECT AUTHORING`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image138.png" />
+      </div>
+
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * Should see the various project artifacts in the left panel
+        * if not, open with the '+' and move down to the 'loan' folder of project
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image139.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * View the data model
+        * you can view the `Java Source Files` or in graphical `Data Modeler`
+        * `AUTHORING -> PROJECT AUTHORING -> TOOLS -> DATA MODELER`
+        * to see how to create a data model, see [lab 03] (/lab03.html)
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image143.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * View the guided rules in the guided rule editor
+        * to see how to create guided rules, see [lab 05] (/lab05.html)
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image142.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * View the technical rules in DRL Editor
+        * to see how to create technical rules, see [lab 06] (/lab06.html)
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image140.png" />
+        <img src="/images/brms_bpms_workshop/image141.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * View the business process in the process designer
+        * to see how to create a process, see [lab 08] (/lab08.html)
+        * has gateways, script tasks, rule tasks, signal, and user task
+
+      <div align="center">
+        <img src="/images/brms_bpms_workshop/image144.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * Inspect the task form definitions in form modeler
+        * `ro.bull.bpm.examples.loan.LoanApp-taskform` : submit to start process instance
+        * `OfficerApprove-taskform` : user task loan approval form
+      * See next page for details on various aspects of form modeler
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image145.png" />
+        <img src="/images/brms_bpms_workshop/image146.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * Various tabs for various editing in Form Modeler
+        * `form properties` -> editor for form properties
+        * `add fields by type` -> create fields by using html elements
+        * `add fields by origin` -> shows available data model fields (empty, all attributes added)
+        * `form data origin` -> maps data sources to form fields
+
+  %section(data-state="" )
+    .title-information
+      %h4 Explore the project
+    :markdown
+      * Work item definitions
+        * for custom work items (domain specific nodes)
+        * shows `EMAIL` and `LOG` items, found in designer `Service Tasks`
+        * each entry backed by an implementation, see JBoss BPM Suite documentation
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image147.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h3 Next up, running the Generic Loan process...
+
+  %section(data-state="questions" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    :markdown
+      <div style="float: left">
+        <img height="100" width="700" src="/images/references.jpg" />
+      </div>
+      * JBoss BRMS & BPM Suite Articles
+        * <font size="5">[_http://schabell.org/search/label/BRMS_] (http://schabell.org/search/label/BRMS) - [_http://schabell.org/search/label/BPMS_] (http://schabell.org/search/label/BPMS)</font>
+      * JBoss BPM Suite Demos
+        * <font size="5">[_http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html_] (http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html_] (http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html_] (http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html)</font>
+        * <font size="5">[_https://github.com/eschabell/business-resource-optimizer-demo_] (https://github.com/eschabell/business-resource-optimizer-demo)</font>
+      * JBoss xPaaS Demos
+        * <font size="5">[_https://github.com/eschabell/cartridge-bpmPaaS_] (https://github.com/eschabell/cartridge-bpmPaaS)</font>
+        * <font size="5">[_https://github.com/eschabell/cartridge-bpmPaaS-generic-loan-demo_] (https://github.com/eschabell/cartridge-bpmPaaS-generic-loan-demo)</font>
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 Automate Your Business with JBoss Integration & BPM
+      %h5
+        :markdown
+          * [Lab 13 - Running the Generic Loan Demo ] (lab13.html)
