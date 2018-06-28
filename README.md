@@ -1,3 +1,6 @@
+Update: June 2018 moved to [Gitlab](https://gitlab.com/eschabell/openshift-summit-2014-brms-workshop)
+
+
 Red Hat Summit 2014 JBoss BRMS Workshop
 =======================================
 This git repository helps you get up and running quickly with a 
